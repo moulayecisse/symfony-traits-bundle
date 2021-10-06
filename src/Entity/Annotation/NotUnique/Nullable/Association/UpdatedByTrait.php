@@ -10,7 +10,7 @@ trait UpdatedByTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Association\UpdatedByTrait;
 
     /**
-     * @ORM\ManyToOne(targetEntity: User::classt)
+     * @ORM\ManyToOne(targetEntity: "App\Entity\User")
      * @ORM\JoinColumn(unique=false, nullable= false)
      */
     protected ?UserInterface $updatedBy;

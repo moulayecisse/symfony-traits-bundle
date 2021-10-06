@@ -9,5 +9,5 @@ trait RolesTrait
     use \Cisse\Bundle\TraitsBundle\Model\NotNullable\Json\RolesTrait;
 
     #[ORM\Column(type: "json", unique: false, nullable: false)]
-    protected array $roles = [];
+    protected array $roles = ['ROLE_USER'];
 }

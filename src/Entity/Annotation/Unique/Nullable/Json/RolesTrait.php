@@ -11,5 +11,5 @@ trait RolesTrait
     /**
      * @ORM\Column(type="json", unique=true, nullable=true)
      */
-    protected ?array $roles = [];
+    protected ?array $roles = ['ROLE_USER'];
 }

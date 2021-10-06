@@ -2,11 +2,9 @@
 
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
-use App\Entity\User;
-
 trait RolesTrait
 {
-    protected ?array $roles = [USER::ROLE_USER];
+    protected ?array $roles = ['ROLE_USER'];
 
     /**
      * @see UserInterface

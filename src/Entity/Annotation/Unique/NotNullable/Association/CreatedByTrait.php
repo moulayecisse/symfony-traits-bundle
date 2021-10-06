@@ -10,7 +10,7 @@ trait CreatedByTrait
     use \Cisse\Bundle\TraitsBundle\Model\NotNullable\Association\CreatedByTrait;
 
     /**
-     * @ORM\ManyToOne(targetEntity: User::classt)
+     * @ORM\ManyToOne(targetEntity: "App\Entity\User")
      * @ORM\JoinColumn(unique=true, nullable= false)
      */
     protected UserInterface $createdBy;
