@@ -8,7 +8,7 @@ Symfony Traits is useful trait that will help you easily create your Symfony ent
 Symfony traits uses Composer.
 
 ```
-composer require cisse/symfony-traits
+composer require cisse/symfony-traits-bundle
 ```
 
 ## Usage
@@ -50,4 +50,4 @@ This component is a work in progress, and it is target for my own usages. But if
 
 ## Versions
 
-8.0.4
+1.0.1
