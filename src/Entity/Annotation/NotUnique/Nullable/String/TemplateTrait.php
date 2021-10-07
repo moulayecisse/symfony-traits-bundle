@@ -11,5 +11,5 @@ trait TemplateTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $template;
+    protected ?string $template = null;
 }

@@ -11,5 +11,5 @@ trait FullContentTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $fullContent;
+    protected ?string $fullContent = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait IsbnTrait
 {
-    protected ?string $isbn;
+    protected ?string $isbn = null;
 
     public function getIsbn(): string
     {

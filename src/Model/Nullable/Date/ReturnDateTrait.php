@@ -6,7 +6,7 @@ use DateTime;
 
 trait ReturnDateTrait
 {
-    protected ?DateTime $returnDate;
+    protected ?DateTime $returnDate = null;
 
     public function getReturnDate(): ?DateTime
     {

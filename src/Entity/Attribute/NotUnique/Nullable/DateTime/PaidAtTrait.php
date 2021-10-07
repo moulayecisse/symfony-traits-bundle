@@ -10,5 +10,5 @@ trait PaidAtTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\PaidAtTrait;
 
     #[ORM\Column(type: "datetime", unique: false, nullable: true)]
-    protected ?DateTime $paidAt;
+    protected ?DateTime $paidAt = null;
 }

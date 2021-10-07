@@ -11,5 +11,5 @@ trait IsDraftTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isDraft;
+    protected ?bool $isDraft = null;
 }

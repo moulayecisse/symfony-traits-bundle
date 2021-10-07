@@ -11,5 +11,5 @@ trait TokenTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $token;
+    protected ?string $token = null;
 }

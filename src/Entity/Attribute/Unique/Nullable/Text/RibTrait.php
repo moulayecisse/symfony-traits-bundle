@@ -9,5 +9,5 @@ trait RibTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\RibTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $rib;
+    protected ?string $rib = null;
 }

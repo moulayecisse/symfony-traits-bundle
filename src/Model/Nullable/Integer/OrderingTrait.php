@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait OrderingTrait
 {
-    protected ?int $ordering;
+    protected ?int $ordering = null;
 
     public function getOrdering(): ?int
     {

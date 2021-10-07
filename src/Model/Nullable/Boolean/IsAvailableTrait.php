@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsAvailableTrait
 {
-    protected ?bool $isAvailable;
+    protected ?bool $isAvailable = null;
 
     public function getIsAvailable(): ?bool
     {

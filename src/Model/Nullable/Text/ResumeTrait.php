@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait ResumeTrait
 {
-    protected ?string $resume;
+    protected ?string $resume = null;
 
     public function getResume(): ?string
     {

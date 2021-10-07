@@ -9,5 +9,5 @@ trait CityTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\CityTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $city;
+    protected ?string $city = null;
 }

@@ -9,5 +9,5 @@ trait ProfessionTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ProfessionTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $profession;
+    protected ?string $profession = null;
 }

@@ -11,5 +11,5 @@ trait TtcTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $ttc;
+    protected ?int $ttc = null;
 }

@@ -9,5 +9,5 @@ trait AccountTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\AccountTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $account;
+    protected ?string $account = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Arrays;
 
 trait TemplatesTrait
 {
-    protected ?array $templates;
+    protected ?array $templates = [];
 
     public function getTemplates(): ?array
     {

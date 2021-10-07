@@ -9,5 +9,5 @@ trait LastNameTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\LastNameTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $lastName;
+    protected ?string $lastName = null;
 }

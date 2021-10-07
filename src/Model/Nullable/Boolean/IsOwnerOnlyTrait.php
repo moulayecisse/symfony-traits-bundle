@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsOwnerOnlyTrait
 {
-    protected ?bool $isOwnerOnly;
+    protected ?bool $isOwnerOnly = null;
 
     public function getIsOwnerOnly(): ?bool
     {

@@ -11,5 +11,5 @@ trait LinkTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $link;
+    protected ?string $link = null;
 }

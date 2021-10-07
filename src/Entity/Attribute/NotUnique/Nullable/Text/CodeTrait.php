@@ -9,5 +9,5 @@ trait CodeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\CodeTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $code;
+    protected ?string $code = null;
 }

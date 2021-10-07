@@ -6,7 +6,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 trait UpdatedByTrait
 {
-    protected ?UserInterface $updatedBy;
+    protected ?UserInterface $updatedBy = null;
 
     public function getUpdatedBy(): ?UserInterface
     {

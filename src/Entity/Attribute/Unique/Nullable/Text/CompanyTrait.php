@@ -9,5 +9,5 @@ trait CompanyTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\CompanyTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $company;
+    protected ?string $company = null;
 }

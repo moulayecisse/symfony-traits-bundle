@@ -11,5 +11,5 @@ trait IsIdTrait
     /**
      * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected ?bool $isId;
+    protected ?bool $isId = null;
 }

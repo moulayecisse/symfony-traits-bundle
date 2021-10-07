@@ -12,5 +12,5 @@ trait ReturnDateTrait
     /**
      * @ORM\Column(type="date", unique=false, nullable=true)
      */
-    protected ?DateTime $returnDate;
+    protected ?DateTime $returnDate = null;
 }

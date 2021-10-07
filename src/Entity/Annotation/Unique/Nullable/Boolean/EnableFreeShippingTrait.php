@@ -11,5 +11,5 @@ trait EnableFreeShippingTrait
     /**
      * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected ?bool $enableFreeShipping;
+    protected ?bool $enableFreeShipping = null;
 }

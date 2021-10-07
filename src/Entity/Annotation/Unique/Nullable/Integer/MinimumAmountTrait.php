@@ -11,5 +11,5 @@ trait MinimumAmountTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $minimumAmount;
+    protected ?int $minimumAmount = null;
 }

@@ -11,5 +11,5 @@ trait AppVersionTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $appVersion;
+    protected ?string $appVersion = null;
 }

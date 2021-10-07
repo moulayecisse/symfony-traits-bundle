@@ -9,5 +9,5 @@ trait ColorTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ColorTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $color;
+    protected ?string $color = null;
 }

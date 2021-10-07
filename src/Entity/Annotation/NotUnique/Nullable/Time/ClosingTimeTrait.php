@@ -12,5 +12,5 @@ trait ClosingTimeTrait
     /**
      * @ORM\Column(type="time", unique=false, nullable=true)
      */
-    protected ?DateTime $closingTime;
+    protected ?DateTime $closingTime = null;
 }

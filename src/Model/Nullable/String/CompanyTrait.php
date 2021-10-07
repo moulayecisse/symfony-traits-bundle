@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait CompanyTrait
 {
-    protected ?string $company;
+    protected ?string $company = null;
 
     public function getCompany(): ?string
     {

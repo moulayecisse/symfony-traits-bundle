@@ -9,5 +9,5 @@ trait SlugTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\SlugTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $slug;
+    protected ?string $slug = null;
 }

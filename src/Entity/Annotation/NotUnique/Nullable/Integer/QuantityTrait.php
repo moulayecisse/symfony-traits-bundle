@@ -11,5 +11,5 @@ trait QuantityTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $quantity;
+    protected ?int $quantity = null;
 }

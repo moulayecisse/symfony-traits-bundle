@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait ButtonTrait
 {
-    protected ?string $button;
+    protected ?string $button = null;
 
     public function getButton(): ?string
     {

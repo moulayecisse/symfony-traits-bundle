@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait CountTrait
 {
-    protected ?int $count;
+    protected ?int $count = null;
 
     public function getCount(): ?int
     {

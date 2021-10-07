@@ -9,5 +9,5 @@ trait QuantityTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\QuantityTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $quantity;
+    protected ?int $quantity = null;
 }

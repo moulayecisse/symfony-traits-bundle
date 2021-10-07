@@ -11,5 +11,5 @@ trait PasswordTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $password;
+    protected ?string $password = null;
 }

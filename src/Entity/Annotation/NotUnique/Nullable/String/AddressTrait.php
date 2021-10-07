@@ -11,5 +11,5 @@ trait AddressTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $address;
+    protected ?string $address = null;
 }

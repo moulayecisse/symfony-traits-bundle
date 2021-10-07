@@ -6,7 +6,7 @@ use DateTime;
 
 trait DateStartTrait
 {
-    protected ?DateTime $dateStart;
+    protected ?DateTime $dateStart = null;
 
     public function getDateStart(): ?DateTime
     {

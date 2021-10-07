@@ -9,5 +9,5 @@ trait ButtonTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\ButtonTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $button;
+    protected ?string $button = null;
 }

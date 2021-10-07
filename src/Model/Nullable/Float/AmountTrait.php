@@ -3,7 +3,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Float;
 
 trait AmountTrait
 {
-    protected ?float $amount;
+    protected ?float $amount = null;
 
     public function setAmount(?float $amount) : self
     {

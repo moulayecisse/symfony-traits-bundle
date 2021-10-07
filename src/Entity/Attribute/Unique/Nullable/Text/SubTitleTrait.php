@@ -9,5 +9,5 @@ trait SubTitleTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\SubTitleTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $subTitle;
+    protected ?string $subTitle = null;
 }

@@ -11,5 +11,5 @@ trait RibTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $rib;
+    protected ?string $rib = null;
 }

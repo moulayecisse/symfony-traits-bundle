@@ -11,5 +11,5 @@ trait CurrencyTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $currency;
+    protected ?string $currency = null;
 }

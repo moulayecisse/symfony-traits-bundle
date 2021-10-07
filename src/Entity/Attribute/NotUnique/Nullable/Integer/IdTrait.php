@@ -11,5 +11,5 @@ trait IdTrait
     #[ORM\Id]
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
     #[ORM\GeneratedValue]
-    protected ?int $id;
+    protected ?int $id = null;
 }

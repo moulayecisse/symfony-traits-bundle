@@ -9,5 +9,5 @@ trait OtherCountTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\OtherCountTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $otherCount;
+    protected ?int $otherCount = null;
 }

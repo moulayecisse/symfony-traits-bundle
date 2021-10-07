@@ -6,7 +6,7 @@ use DateTime;
 
 trait OpeningTimeTrait
 {
-    protected ?DateTime $openingTime;
+    protected ?DateTime $openingTime = null;
 
     public function getOpeningTime(): ?DateTime
     {

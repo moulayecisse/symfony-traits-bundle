@@ -9,5 +9,5 @@ trait NamespacedNameTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\NamespacedNameTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $namespacedName;
+    protected ?string $namespacedName = null;
 }

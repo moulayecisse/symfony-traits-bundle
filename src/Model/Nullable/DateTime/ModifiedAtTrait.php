@@ -6,7 +6,7 @@ use DateTime;
 
 trait ModifiedAtTrait
 {
-    protected ?DateTime $modifiedAt;
+    protected ?DateTime $modifiedAt = null;
 
     public function getModifiedAt(): ?DateTime
     {

@@ -11,5 +11,5 @@ trait DurationTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $duration;
+    protected ?int $duration = null;
 }

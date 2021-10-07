@@ -11,5 +11,5 @@ trait ImageTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $image;
+    protected ?string $image = null;
 }

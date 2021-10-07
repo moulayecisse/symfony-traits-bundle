@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait TemplateTrait
 {
-    protected ?string $template;
+    protected ?string $template = null;
 
     public function getTemplate(): ?string
     {

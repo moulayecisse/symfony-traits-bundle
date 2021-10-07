@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait SerialTrait
 {
-    protected ?string $serial;
+    protected ?string $serial = null;
 
     public function getSerial(): string
     {

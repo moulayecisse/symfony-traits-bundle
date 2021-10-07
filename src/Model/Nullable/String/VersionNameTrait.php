@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait VersionNameTrait
 {
-    protected ?string $versionName;
+    protected ?string $versionName = null;
 
     public function getVersionName(): ?string
     {

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait TypeTrait
 {
-    protected ?string $type;
+    protected ?string $type = null;
 
     public function getType(): ?string
     {

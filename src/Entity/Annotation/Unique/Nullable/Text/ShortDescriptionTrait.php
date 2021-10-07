@@ -11,5 +11,5 @@ trait ShortDescriptionTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $shortDescription;
+    protected ?string $shortDescription = null;
 }

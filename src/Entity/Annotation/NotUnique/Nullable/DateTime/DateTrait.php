@@ -12,5 +12,5 @@ trait DateTrait
     /**
      * @ORM\Column(type="datetime", unique=false, nullable=true)
      */
-    protected ?DateTime $date;
+    protected ?DateTime $date = null;
 }

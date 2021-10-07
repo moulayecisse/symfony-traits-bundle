@@ -11,5 +11,5 @@ trait NumberTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $number;
+    protected ?int $number = null;
 }

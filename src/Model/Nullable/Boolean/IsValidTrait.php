@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsValidTrait
 {
-    protected ?bool $isValid;
+    protected ?bool $isValid = null;
 
     public function getIsValid(): ?bool
     {

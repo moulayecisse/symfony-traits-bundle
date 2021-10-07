@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait PasswordRepeatTrait
 {
-    protected ?string $passwordRepeat;
+    protected ?string $passwordRepeat = null;
 
     public function getPasswordRepeat(): string
     {

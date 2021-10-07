@@ -11,5 +11,5 @@ trait ThumbnailTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $thumbnail;
+    protected ?string $thumbnail = null;
 }

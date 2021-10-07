@@ -11,5 +11,5 @@ trait VersionNameTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $versionName;
+    protected ?string $versionName = null;
 }

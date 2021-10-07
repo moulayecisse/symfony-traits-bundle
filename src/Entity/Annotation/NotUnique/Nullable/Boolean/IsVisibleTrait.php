@@ -11,5 +11,5 @@ trait IsVisibleTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isVisible;
+    protected ?bool $isVisible = null;
 }

@@ -9,5 +9,5 @@ trait IsFeatureTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsFeatureTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $isFeature;
+    protected ?bool $isFeature = null;
 }

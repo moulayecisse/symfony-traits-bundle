@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait PriceTrait
 {
-    protected ?int $price;
+    protected ?int $price = null;
 
     public function getPrice(): ?int
     {

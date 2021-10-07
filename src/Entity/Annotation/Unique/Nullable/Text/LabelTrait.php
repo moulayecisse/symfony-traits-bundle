@@ -11,5 +11,5 @@ trait LabelTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $label;
+    protected ?string $label = null;
 }

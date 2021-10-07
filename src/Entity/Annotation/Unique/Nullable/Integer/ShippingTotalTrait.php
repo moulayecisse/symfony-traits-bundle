@@ -11,5 +11,5 @@ trait ShippingTotalTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $shippingTotal;
+    protected ?int $shippingTotal = null;
 }

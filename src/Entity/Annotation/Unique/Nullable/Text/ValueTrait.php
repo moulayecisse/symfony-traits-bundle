@@ -11,5 +11,5 @@ trait ValueTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $value;
+    protected ?string $value = null;
 }

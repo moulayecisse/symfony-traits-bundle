@@ -10,5 +10,5 @@ trait DateTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Date\DateTrait;
 
     #[ORM\Column(type: "date", unique: true, nullable: true)]
-    protected ?DateTime $date;
+    protected ?DateTime $date = null;
 }

@@ -11,5 +11,5 @@ trait PageNumberTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $pageNumber;
+    protected ?int $pageNumber = null;
 }

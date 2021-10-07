@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait QuantityTrait
 {
-    protected ?int $quantity;
+    protected ?int $quantity = null;
 
     public function getQuantity(): ?int
     {

@@ -11,5 +11,5 @@ trait CompanyTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $company;
+    protected ?string $company = null;
 }

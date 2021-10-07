@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsFeatureTrait
 {
-    protected ?bool $isFeature;
+    protected ?bool $isFeature = null;
 
     public function getIsFeature(): ?bool
     {

@@ -12,5 +12,5 @@ trait CreatedAtTrait
     /**
      * @ORM\Column(type="datetime", unique=true, nullable=true)
      */
-    protected ?DateTime $createdAt;
+    protected ?DateTime $createdAt = null;
 }

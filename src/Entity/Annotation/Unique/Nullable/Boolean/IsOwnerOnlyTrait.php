@@ -11,5 +11,5 @@ trait IsOwnerOnlyTrait
     /**
      * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected ?bool $isOwnerOnly;
+    protected ?bool $isOwnerOnly = null;
 }

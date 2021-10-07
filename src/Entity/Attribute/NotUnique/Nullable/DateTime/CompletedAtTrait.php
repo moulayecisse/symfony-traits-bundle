@@ -10,5 +10,5 @@ trait CompletedAtTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\CompletedAtTrait;
 
     #[ORM\Column(type: "datetime", unique: false, nullable: true)]
-    protected ?DateTime $completedAt;
+    protected ?DateTime $completedAt = null;
 }

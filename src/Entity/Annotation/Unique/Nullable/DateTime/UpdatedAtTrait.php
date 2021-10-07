@@ -12,5 +12,5 @@ trait UpdatedAtTrait
     /**
      * @ORM\Column(type="datetime", unique=true, nullable=true)
      */
-    protected ?DateTime $updatedAt;
+    protected ?DateTime $updatedAt = null;
 }

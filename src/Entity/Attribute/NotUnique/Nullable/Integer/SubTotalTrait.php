@@ -9,5 +9,5 @@ trait SubTotalTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\SubTotalTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $subTotal;
+    protected ?int $subTotal = null;
 }

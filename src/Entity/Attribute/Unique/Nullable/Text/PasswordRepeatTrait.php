@@ -9,5 +9,5 @@ trait PasswordRepeatTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\PasswordRepeatTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $passwordRepeat;
+    protected ?string $passwordRepeat = null;
 }

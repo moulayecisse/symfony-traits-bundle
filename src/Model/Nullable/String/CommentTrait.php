@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait CommentTrait
 {
-    protected ?string $comment;
+    protected ?string $comment = null;
 
     public function getComment(): string
     {

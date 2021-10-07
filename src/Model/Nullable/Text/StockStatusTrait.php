@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait StockStatusTrait
 {
-    protected ?string $stockStatus;
+    protected ?string $stockStatus = null;
 
     public function getStockStatus(): ?string
     {

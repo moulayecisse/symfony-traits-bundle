@@ -11,5 +11,5 @@ trait MaximumAmountTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $maximumAmount;
+    protected ?int $maximumAmount = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait NamespaceTrait
 {
-    protected ?string $namespace;
+    protected ?string $namespace = null;
 
     public function getNamespace(): ?string
     {

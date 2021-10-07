@@ -9,5 +9,5 @@ trait BiographyTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\BiographyTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $biography;
+    protected ?string $biography = null;
 }

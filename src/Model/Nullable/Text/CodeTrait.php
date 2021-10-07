@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait CodeTrait
 {
-    protected ?string $code;
+    protected ?string $code = null;
 
     public function getCode(): ?string
     {

@@ -9,5 +9,5 @@ trait AddressTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\AddressTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $address;
+    protected ?string $address = null;
 }

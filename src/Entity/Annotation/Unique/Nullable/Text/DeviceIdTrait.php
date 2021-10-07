@@ -11,5 +11,5 @@ trait DeviceIdTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $deviceId;
+    protected ?string $deviceId = null;
 }

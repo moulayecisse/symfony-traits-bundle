@@ -9,5 +9,5 @@ trait ExtensionTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\ExtensionTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $extension;
+    protected ?string $extension = null;
 }

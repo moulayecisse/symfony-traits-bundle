@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait SubTitleTrait
 {
-    protected ?string $subTitle;
+    protected ?string $subTitle = null;
 
     public function getSubTitle(): ?string
     {

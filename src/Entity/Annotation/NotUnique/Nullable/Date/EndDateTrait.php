@@ -12,5 +12,5 @@ trait EndDateTrait
     /**
      * @ORM\Column(type="date", unique=false, nullable=true)
      */
-    protected ?DateTime $endDate;
+    protected ?DateTime $endDate = null;
 }

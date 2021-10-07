@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait SubTotalTrait
 {
-    protected ?int $subTotal;
+    protected ?int $subTotal = null;
 
     public function getSubTotal(): ?int
     {

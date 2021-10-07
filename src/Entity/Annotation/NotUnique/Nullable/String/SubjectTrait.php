@@ -11,5 +11,5 @@ trait SubjectTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $subject;
+    protected ?string $subject = null;
 }

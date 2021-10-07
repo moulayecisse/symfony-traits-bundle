@@ -9,5 +9,5 @@ trait OrderingTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\OrderingTrait;
 
     #[ORM\Column(type: "integer", unique: true, nullable: true)]
-    protected ?int $ordering;
+    protected ?int $ordering = null;
 }

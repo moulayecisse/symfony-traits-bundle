@@ -10,5 +10,5 @@ trait AmountTrait
     /**
      * @ORM\Column(type="float", unique=true, nullable=true)
      */
-    protected ?float $amount;
+    protected ?float $amount = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait ExcludeSaleItemsTrait
 {
-    protected ?bool $excludeSaleItems;
+    protected ?bool $excludeSaleItems = null;
 
     public function getExcludeSaleItems(): ?bool
     {

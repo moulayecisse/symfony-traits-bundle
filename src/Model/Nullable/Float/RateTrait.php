@@ -3,7 +3,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Float;
 
 trait RateTrait
 {
-    protected ?float $rate;
+    protected ?float $rate = null;
 
     public function setRate(?float $rate) : self
     {

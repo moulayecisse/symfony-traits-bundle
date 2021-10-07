@@ -11,5 +11,5 @@ trait BirthPlaceTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $birthPlace;
+    protected ?string $birthPlace = null;
 }

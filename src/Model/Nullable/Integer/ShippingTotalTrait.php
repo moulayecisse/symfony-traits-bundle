@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait ShippingTotalTrait
 {
-    protected ?int $shippingTotal;
+    protected ?int $shippingTotal = null;
 
     public function getShippingTotal(): ?int
     {

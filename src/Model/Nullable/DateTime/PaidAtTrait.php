@@ -6,7 +6,7 @@ use DateTime;
 
 trait PaidAtTrait
 {
-    protected ?DateTime $paidAt;
+    protected ?DateTime $paidAt = null;
 
     public function getPaidAt(): ?DateTime
     {

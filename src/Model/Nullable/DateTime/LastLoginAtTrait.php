@@ -6,7 +6,7 @@ use DateTime;
 
 trait LastLoginAtTrait
 {
-    protected ?DateTime $lastLoginAt;
+    protected ?DateTime $lastLoginAt = null;
 
     public function getLastLoginAt(): ?DateTime
     {

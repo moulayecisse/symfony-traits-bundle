@@ -6,7 +6,7 @@ use DateTime;
 
 trait ClosingTimeTrait
 {
-    protected ?DateTime $closingTime;
+    protected ?DateTime $closingTime = null;
 
     public function getClosingTime(): ?DateTime
     {

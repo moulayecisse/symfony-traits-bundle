@@ -11,5 +11,5 @@ trait PriorityTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $priority;
+    protected ?int $priority = null;
 }

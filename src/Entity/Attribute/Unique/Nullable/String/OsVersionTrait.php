@@ -9,5 +9,5 @@ trait OsVersionTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\OsVersionTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $osVersion;
+    protected ?string $osVersion = null;
 }

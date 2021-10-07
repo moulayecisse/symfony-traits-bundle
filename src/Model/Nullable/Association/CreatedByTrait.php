@@ -6,7 +6,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 trait CreatedByTrait
 {
-    protected ?UserInterface $createdBy;
+    protected ?UserInterface $createdBy = null;
 
     public function getCreatedBy(): ?UserInterface
     {

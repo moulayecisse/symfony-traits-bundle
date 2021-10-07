@@ -11,5 +11,5 @@ trait AllergyTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $allergy;
+    protected ?string $allergy = null;
 }

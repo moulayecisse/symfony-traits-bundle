@@ -9,5 +9,5 @@ trait EnableFreeShippingTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\EnableFreeShippingTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $enableFreeShipping;
+    protected ?bool $enableFreeShipping = null;
 }

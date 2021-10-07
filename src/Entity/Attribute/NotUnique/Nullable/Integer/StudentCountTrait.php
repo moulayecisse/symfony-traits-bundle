@@ -9,5 +9,5 @@ trait StudentCountTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\StudentCountTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $studentCount;
+    protected ?int $studentCount = null;
 }

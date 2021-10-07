@@ -9,5 +9,5 @@ trait ResumeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ResumeTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $resume;
+    protected ?string $resume = null;
 }

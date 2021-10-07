@@ -6,7 +6,7 @@ use DateTime;
 
 trait PublishedAtTrait
 {
-    protected ?DateTime $publishedAt;
+    protected ?DateTime $publishedAt = null;
 
     public function getPublishedAt(): ?DateTime
     {

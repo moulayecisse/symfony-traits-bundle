@@ -11,5 +11,5 @@ trait IsReadTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isRead;
+    protected ?bool $isRead = null;
 }

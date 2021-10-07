@@ -9,5 +9,5 @@ trait UsernameTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\UsernameTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $username;
+    protected ?string $username = null;
 }

@@ -11,5 +11,5 @@ trait StockStatusTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $stockStatus;
+    protected ?string $stockStatus = null;
 }

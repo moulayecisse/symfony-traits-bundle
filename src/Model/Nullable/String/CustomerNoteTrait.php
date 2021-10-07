@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait CustomerNoteTrait
 {
-    protected ?string $customerNote;
+    protected ?string $customerNote = null;
 
     public function getCustomerNote(): ?string
     {

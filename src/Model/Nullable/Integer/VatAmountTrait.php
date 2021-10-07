@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait VatAmountTrait
 {
-    protected ?int $vatAmount;
+    protected ?int $vatAmount = null;
 
     public function getVatAmount(): ?int
     {

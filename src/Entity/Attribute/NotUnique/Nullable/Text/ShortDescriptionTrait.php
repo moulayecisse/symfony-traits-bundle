@@ -9,5 +9,5 @@ trait ShortDescriptionTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ShortDescriptionTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $shortDescription;
+    protected ?string $shortDescription = null;
 }

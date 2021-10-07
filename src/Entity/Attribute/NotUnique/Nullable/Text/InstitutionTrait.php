@@ -9,5 +9,5 @@ trait InstitutionTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\InstitutionTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $institution;
+    protected ?string $institution = null;
 }

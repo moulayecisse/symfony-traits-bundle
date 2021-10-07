@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait RegistrationIdTrait
 {
-    protected ?string $registrationId;
+    protected ?string $registrationId = null;
 
     public function getRegistrationId(): ?string
     {

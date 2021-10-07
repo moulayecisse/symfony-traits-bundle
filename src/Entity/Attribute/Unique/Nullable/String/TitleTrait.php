@@ -9,5 +9,5 @@ trait TitleTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\TitleTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $title;
+    protected ?string $title = null;
 }

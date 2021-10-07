@@ -11,5 +11,5 @@ trait IsIndividualTrait
     /**
      * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected ?bool $isIndividual;
+    protected ?bool $isIndividual = null;
 }

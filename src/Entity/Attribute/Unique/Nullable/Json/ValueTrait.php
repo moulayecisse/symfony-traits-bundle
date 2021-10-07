@@ -9,5 +9,5 @@ trait ValueTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Json\ValueTrait;
 
     #[ORM\Column(type: "json", unique: true, nullable: true)]
-    protected mixed $value;
+    protected mixed $value = null;
 }

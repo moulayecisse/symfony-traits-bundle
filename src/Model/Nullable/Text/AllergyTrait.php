@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait AllergyTrait
 {
-    protected ?string $allergy;
+    protected ?string $allergy = null;
 
     public function getAllergy(): ?string
     {

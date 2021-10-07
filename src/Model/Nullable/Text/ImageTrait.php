@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait ImageTrait
 {
-    protected ?string $image;
+    protected ?string $image = null;
 
     public function getImage(): ?string
     {

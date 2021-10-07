@@ -9,5 +9,5 @@ trait OrderKeyTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\OrderKeyTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $orderKey;
+    protected ?string $orderKey = null;
 }

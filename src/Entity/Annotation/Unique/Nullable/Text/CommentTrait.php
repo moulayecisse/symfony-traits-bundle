@@ -11,5 +11,5 @@ trait CommentTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $comment;
+    protected ?string $comment = null;
 }

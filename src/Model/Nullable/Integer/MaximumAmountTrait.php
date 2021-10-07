@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait MaximumAmountTrait
 {
-    protected ?int $maximumAmount;
+    protected ?int $maximumAmount = null;
 
     public function getMaximumAmount(): ?int
     {

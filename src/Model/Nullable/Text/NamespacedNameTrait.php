@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait NamespacedNameTrait
 {
-    protected ?string $namespacedName;
+    protected ?string $namespacedName = null;
 
     public function getNamespacedName(): ?string
     {

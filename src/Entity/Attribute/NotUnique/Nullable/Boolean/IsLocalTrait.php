@@ -9,5 +9,5 @@ trait IsLocalTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsLocalTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $isLocal;
+    protected ?bool $isLocal = null;
 }

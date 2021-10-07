@@ -9,5 +9,5 @@ trait DescriptionTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\DescriptionTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $description;
+    protected ?string $description = null;
 }

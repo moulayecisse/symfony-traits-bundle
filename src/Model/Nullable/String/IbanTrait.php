@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait IbanTrait
 {
-    protected ?string $iban;
+    protected ?string $iban = null;
 
     public function getIban(): ?string
     {

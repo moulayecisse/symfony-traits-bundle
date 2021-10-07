@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait BirthPlaceTrait
 {
-    protected ?string $birthPlace;
+    protected ?string $birthPlace = null;
 
     public function getBirthPlace(): ?string
     {

@@ -3,7 +3,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Decimal;
 
 trait PriceDiscountTrait
 {
-    protected ?int $priceDiscount;
+    protected ?int $priceDiscount = null;
 
     public function setPriceDiscount(?int $priceDiscount) : self
     {

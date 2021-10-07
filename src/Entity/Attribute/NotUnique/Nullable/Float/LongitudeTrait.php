@@ -8,5 +8,5 @@ trait LongitudeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Float\LongitudeTrait;
 
     #[ORM\Column(type: "float", unique: false, nullable: true)]
-    protected ?float $longitude;
+    protected ?float $longitude = null;
 }

@@ -9,5 +9,5 @@ trait DiscountTotalTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\DiscountTotalTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $discountTotal;
+    protected ?int $discountTotal = null;
 }

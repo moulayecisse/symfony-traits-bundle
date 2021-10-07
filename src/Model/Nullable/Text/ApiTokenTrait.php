@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait ApiTokenTrait
 {
-    protected ?string $apiToken;
+    protected ?string $apiToken = null;
 
     public function getApiToken(): ?string
     {

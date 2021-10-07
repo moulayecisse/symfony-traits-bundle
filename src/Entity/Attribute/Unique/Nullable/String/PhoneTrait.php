@@ -9,5 +9,5 @@ trait PhoneTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\PhoneTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $phone;
+    protected ?string $phone = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsIndividualTrait
 {
-    protected ?bool $isIndividual;
+    protected ?bool $isIndividual = null;
 
     public function getIsIndividual(): ?bool
     {

@@ -9,5 +9,5 @@ trait MinimumAmountTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\MinimumAmountTrait;
 
     #[ORM\Column(type: "integer", unique: true, nullable: true)]
-    protected ?int $minimumAmount;
+    protected ?int $minimumAmount = null;
 }

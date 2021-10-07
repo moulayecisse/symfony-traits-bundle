@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait ZipCodeTrait
 {
-    protected ?string $zipCode;
+    protected ?string $zipCode = null;
 
     public function getZipCode(): ?string
     {

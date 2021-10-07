@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait OsVersionTrait
 {
-    protected ?string $osVersion;
+    protected ?string $osVersion = null;
 
     public function getOsVersion(): ?string
     {

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait DurationTrait
 {
-    protected ?int $duration;
+    protected ?int $duration = null;
 
     public function getDuration(): ?int
     {

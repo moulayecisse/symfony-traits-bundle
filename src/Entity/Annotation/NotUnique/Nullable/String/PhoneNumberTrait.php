@@ -11,5 +11,5 @@ trait PhoneNumberTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $phoneNumber;
+    protected ?string $phoneNumber = null;
 }

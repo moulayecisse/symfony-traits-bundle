@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait EnableFreeShippingTrait
 {
-    protected ?bool $enableFreeShipping;
+    protected ?bool $enableFreeShipping = null;
 
     public function getEnableFreeShipping(): ?bool
     {

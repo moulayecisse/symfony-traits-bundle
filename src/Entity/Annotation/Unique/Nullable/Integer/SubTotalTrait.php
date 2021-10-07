@@ -11,5 +11,5 @@ trait SubTotalTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $subTotal;
+    protected ?int $subTotal = null;
 }

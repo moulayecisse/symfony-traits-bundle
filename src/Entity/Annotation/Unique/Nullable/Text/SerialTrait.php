@@ -11,5 +11,5 @@ trait SerialTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $serial;
+    protected ?string $serial = null;
 }

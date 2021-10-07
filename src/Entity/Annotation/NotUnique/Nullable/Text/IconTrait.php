@@ -11,5 +11,5 @@ trait IconTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $icon;
+    protected ?string $icon = null;
 }

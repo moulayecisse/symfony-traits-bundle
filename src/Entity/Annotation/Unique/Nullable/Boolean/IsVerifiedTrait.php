@@ -11,5 +11,5 @@ trait IsVerifiedTrait
     /**
      * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected ?bool $isVerified;
+    protected ?bool $isVerified = null;
 }

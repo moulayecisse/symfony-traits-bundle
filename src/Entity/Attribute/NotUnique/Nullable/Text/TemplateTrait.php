@@ -9,5 +9,5 @@ trait TemplateTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\TemplateTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $template;
+    protected ?string $template = null;
 }

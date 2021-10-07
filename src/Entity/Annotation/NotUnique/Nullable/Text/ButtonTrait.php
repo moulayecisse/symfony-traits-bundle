@@ -11,5 +11,5 @@ trait ButtonTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $button;
+    protected ?string $button = null;
 }

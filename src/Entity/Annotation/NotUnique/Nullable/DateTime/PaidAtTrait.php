@@ -12,5 +12,5 @@ trait PaidAtTrait
     /**
      * @ORM\Column(type="datetime", unique=false, nullable=true)
      */
-    protected ?DateTime $paidAt;
+    protected ?DateTime $paidAt = null;
 }

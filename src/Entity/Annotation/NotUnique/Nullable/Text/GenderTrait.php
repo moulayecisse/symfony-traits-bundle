@@ -11,5 +11,5 @@ trait GenderTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $gender;
+    protected ?string $gender = null;
 }

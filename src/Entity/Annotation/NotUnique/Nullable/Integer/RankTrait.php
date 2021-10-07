@@ -11,5 +11,5 @@ trait RankTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $rank;
+    protected ?int $rank = null;
 }

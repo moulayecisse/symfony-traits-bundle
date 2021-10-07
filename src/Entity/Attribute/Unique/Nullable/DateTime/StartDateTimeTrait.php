@@ -10,5 +10,5 @@ trait StartDateTimeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\StartDateTimeTrait;
 
     #[ORM\Column(type: "datetime", unique: true, nullable: true)]
-    protected ?DateTime $startDateTime;
+    protected ?DateTime $startDateTime = null;
 }

@@ -9,5 +9,5 @@ trait IsAvailableTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsAvailableTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $isAvailable;
+    protected ?bool $isAvailable = null;
 }

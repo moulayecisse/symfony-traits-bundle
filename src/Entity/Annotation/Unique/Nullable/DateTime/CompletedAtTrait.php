@@ -12,5 +12,5 @@ trait CompletedAtTrait
     /**
      * @ORM\Column(type="datetime", unique=true, nullable=true)
      */
-    protected ?DateTime $completedAt;
+    protected ?DateTime $completedAt = null;
 }

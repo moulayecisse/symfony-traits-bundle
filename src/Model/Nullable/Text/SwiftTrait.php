@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait SwiftTrait
 {
-    protected ?string $swift;
+    protected ?string $swift = null;
 
     public function getSwift(): ?string
     {

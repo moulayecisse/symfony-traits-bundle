@@ -6,7 +6,7 @@ use DateTime;
 
 trait CreatedAtTrait
 {
-    protected ?DateTime $createdAt;
+    protected ?DateTime $createdAt = null;
 
     public function getCreatedAt(): ?DateTime
     {

@@ -6,7 +6,7 @@ use DateTime;
 
 trait TokenExpireAtTrait
 {
-    protected ?DateTime $tokenExpireAt;
+    protected ?DateTime $tokenExpireAt = null;
 
     public function getTokenExpireAt(): ?DateTime
     {

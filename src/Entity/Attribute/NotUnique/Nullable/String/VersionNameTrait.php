@@ -9,5 +9,5 @@ trait VersionNameTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\VersionNameTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $versionName;
+    protected ?string $versionName = null;
 }

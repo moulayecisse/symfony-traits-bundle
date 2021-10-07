@@ -9,5 +9,5 @@ trait IsOwnerOnlyTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsOwnerOnlyTrait;
 
     #[ORM\Column(type: "boolean", unique: true, nullable: true)]
-    protected ?bool $isOwnerOnly;
+    protected ?bool $isOwnerOnly = null;
 }

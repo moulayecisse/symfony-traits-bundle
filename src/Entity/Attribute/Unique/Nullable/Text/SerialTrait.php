@@ -9,5 +9,5 @@ trait SerialTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\SerialTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $serial;
+    protected ?string $serial = null;
 }

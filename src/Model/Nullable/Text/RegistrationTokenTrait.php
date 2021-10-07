@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait RegistrationTokenTrait
 {
-    protected ?string $registrationToken;
+    protected ?string $registrationToken = null;
 
     public function getRegistrationToken(): ?string
     {

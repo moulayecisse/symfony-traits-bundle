@@ -9,5 +9,5 @@ trait FloorTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\FloorTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $floor;
+    protected ?int $floor = null;
 }

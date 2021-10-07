@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait StockTrait
 {
-    protected ?int $stock;
+    protected ?int $stock = null;
 
     public function getStock(): ?int
     {

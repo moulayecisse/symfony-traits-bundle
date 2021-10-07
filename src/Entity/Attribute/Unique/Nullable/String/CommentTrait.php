@@ -9,5 +9,5 @@ trait CommentTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\CommentTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $comment;
+    protected ?string $comment = null;
 }

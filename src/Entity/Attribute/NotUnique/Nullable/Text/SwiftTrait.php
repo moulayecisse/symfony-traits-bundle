@@ -9,5 +9,5 @@ trait SwiftTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\SwiftTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $swift;
+    protected ?string $swift = null;
 }

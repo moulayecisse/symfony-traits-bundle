@@ -9,5 +9,5 @@ trait TypeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\TypeTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $type;
+    protected ?string $type = null;
 }

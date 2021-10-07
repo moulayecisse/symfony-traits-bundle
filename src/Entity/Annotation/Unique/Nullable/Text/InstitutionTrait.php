@@ -11,5 +11,5 @@ trait InstitutionTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $institution;
+    protected ?string $institution = null;
 }

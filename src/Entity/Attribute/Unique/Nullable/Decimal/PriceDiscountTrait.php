@@ -8,5 +8,5 @@ trait PriceDiscountTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Decimal\PriceDiscountTrait;
 
     #[ORM\Column(type: "decimal", precision: 12, scale: 2, unique: true, nullable: true)]
-    protected ?int $priceDiscount;
+    protected ?int $priceDiscount = null;
 }

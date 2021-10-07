@@ -9,5 +9,5 @@ trait RankTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\RankTrait;
 
     #[ORM\Column(type: "integer", unique: true, nullable: true)]
-    protected ?int $rank;
+    protected ?int $rank = null;
 }

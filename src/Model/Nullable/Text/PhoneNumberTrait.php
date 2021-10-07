@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait PhoneNumberTrait
 {
-    protected ?string $phoneNumber;
+    protected ?string $phoneNumber = null;
 
     public function getPhoneNumber(): ?string
     {

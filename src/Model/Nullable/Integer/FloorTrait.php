@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait FloorTrait
 {
-    protected ?int $floor;
+    protected ?int $floor = null;
 
     public function getFloor(): ?int
     {

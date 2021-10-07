@@ -9,5 +9,5 @@ trait PathTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\PathTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $path;
+    protected ?string $path = null;
 }

@@ -9,5 +9,5 @@ trait ExcludeSaleItemsTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\ExcludeSaleItemsTrait;
 
     #[ORM\Column(type: "boolean", unique: true, nullable: true)]
-    protected ?bool $excludeSaleItems;
+    protected ?bool $excludeSaleItems = null;
 }

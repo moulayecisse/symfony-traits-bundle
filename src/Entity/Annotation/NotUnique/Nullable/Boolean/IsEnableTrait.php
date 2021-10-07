@@ -11,5 +11,5 @@ trait IsEnableTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isEnable;
+    protected ?bool $isEnable = null;
 }

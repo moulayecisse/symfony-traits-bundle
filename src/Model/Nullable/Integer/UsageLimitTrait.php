@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait UsageLimitTrait
 {
-    protected ?int $usageLimit;
+    protected ?int $usageLimit = null;
 
     public function getUsageLimit(): ?int
     {

@@ -9,5 +9,5 @@ trait GenderTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\GenderTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $gender;
+    protected ?string $gender = null;
 }

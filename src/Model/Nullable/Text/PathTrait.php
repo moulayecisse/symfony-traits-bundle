@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait PathTrait
 {
-    protected ?string $path;
+    protected ?string $path = null;
 
     public function getPath(): ?string
     {

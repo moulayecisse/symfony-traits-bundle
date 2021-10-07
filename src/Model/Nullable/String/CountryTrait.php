@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait CountryTrait
 {
-    protected ?string $country;
+    protected ?string $country = null;
 
     public function getCountry(): ?string
     {

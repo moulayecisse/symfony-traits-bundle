@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait AddressTrait
 {
-    protected ?string $address;
+    protected ?string $address = null;
 
     public function getAddress(): ?string
     {

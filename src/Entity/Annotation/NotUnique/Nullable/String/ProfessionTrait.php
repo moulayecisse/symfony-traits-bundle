@@ -11,5 +11,5 @@ trait ProfessionTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $profession;
+    protected ?string $profession = null;
 }

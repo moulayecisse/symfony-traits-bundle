@@ -9,5 +9,5 @@ trait IbanTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\IbanTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $iban;
+    protected ?string $iban = null;
 }

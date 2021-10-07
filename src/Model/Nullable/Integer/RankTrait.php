@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait RankTrait
 {
-    protected ?int $rank;
+    protected ?int $rank = null;
 
     public function getRank(): ?int
     {

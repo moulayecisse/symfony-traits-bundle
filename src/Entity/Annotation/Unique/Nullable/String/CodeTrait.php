@@ -11,5 +11,5 @@ trait CodeTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $code;
+    protected ?string $code = null;
 }

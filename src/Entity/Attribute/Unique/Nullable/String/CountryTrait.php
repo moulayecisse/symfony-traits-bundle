@@ -9,5 +9,5 @@ trait CountryTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\CountryTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: true, nullable: true)]
-    protected ?string $country;
+    protected ?string $country = null;
 }

@@ -12,5 +12,5 @@ trait DateEndTrait
     /**
      * @ORM\Column(type="datetime", unique=false, nullable=true)
      */
-    protected ?DateTime $dateEnd;
+    protected ?DateTime $dateEnd = null;
 }

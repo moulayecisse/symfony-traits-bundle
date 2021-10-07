@@ -11,5 +11,5 @@ trait IsFeatureTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isFeature;
+    protected ?bool $isFeature = null;
 }

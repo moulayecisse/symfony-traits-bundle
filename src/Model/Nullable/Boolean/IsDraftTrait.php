@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsDraftTrait
 {
-    protected ?bool $isDraft;
+    protected ?bool $isDraft = null;
 
     public function getIsDraft(): ?bool
     {

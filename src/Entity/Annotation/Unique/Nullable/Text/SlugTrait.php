@@ -11,5 +11,5 @@ trait SlugTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $slug;
+    protected ?string $slug = null;
 }

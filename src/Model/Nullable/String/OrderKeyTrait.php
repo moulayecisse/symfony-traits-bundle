@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait OrderKeyTrait
 {
-    protected ?string $orderKey;
+    protected ?string $orderKey = null;
 
     public function getOrderKey(): ?string
     {

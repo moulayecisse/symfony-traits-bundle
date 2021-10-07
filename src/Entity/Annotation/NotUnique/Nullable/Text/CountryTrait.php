@@ -11,5 +11,5 @@ trait CountryTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $country;
+    protected ?string $country = null;
 }

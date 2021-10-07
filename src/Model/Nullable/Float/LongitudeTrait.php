@@ -3,7 +3,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Float;
 
 trait LongitudeTrait
 {
-    protected ?float $longitude;
+    protected ?float $longitude = null;
 
     public function setLongitude(?float $longitude) : self
     {

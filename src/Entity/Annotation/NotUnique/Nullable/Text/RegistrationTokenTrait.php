@@ -11,5 +11,5 @@ trait RegistrationTokenTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $registrationToken;
+    protected ?string $registrationToken = null;
 }

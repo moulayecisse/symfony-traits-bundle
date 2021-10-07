@@ -11,5 +11,5 @@ trait ExtensionTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $extension;
+    protected ?string $extension = null;
 }

@@ -11,5 +11,5 @@ trait FirstNameTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $firstName;
+    protected ?string $firstName = null;
 }

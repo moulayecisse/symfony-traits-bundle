@@ -9,5 +9,5 @@ trait ApiTokenTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ApiTokenTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $apiToken;
+    protected ?string $apiToken = null;
 }

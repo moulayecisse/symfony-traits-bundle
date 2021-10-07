@@ -12,5 +12,5 @@ trait TokenExpireAtTrait
     /**
      * @ORM\Column(type="datetime", unique=false, nullable=true)
      */
-    protected ?DateTime $tokenExpireAt;
+    protected ?DateTime $tokenExpireAt = null;
 }

@@ -9,5 +9,5 @@ trait VersionCodeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\VersionCodeTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $versionCode;
+    protected ?int $versionCode = null;
 }

@@ -9,5 +9,5 @@ trait FileTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\FileTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $file;
+    protected ?string $file = null;
 }

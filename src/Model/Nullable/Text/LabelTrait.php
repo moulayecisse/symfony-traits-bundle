@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait LabelTrait
 {
-    protected ?string $label;
+    protected ?string $label = null;
 
     public function getLabel(): ?string
     {

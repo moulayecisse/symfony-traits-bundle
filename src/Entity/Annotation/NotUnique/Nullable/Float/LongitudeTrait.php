@@ -10,5 +10,5 @@ trait LongitudeTrait
     /**
      * @ORM\Column(type="float", unique=false, nullable=true)
      */
-    protected ?float $longitude;
+    protected ?float $longitude = null;
 }

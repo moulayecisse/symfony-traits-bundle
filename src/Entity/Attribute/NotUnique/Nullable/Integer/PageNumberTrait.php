@@ -9,5 +9,5 @@ trait PageNumberTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\PageNumberTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $pageNumber;
+    protected ?int $pageNumber = null;
 }

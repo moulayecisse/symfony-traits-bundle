@@ -11,5 +11,5 @@ trait IbanTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $iban;
+    protected ?string $iban = null;
 }

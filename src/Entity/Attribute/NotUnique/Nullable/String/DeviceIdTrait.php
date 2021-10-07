@@ -9,5 +9,5 @@ trait DeviceIdTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\DeviceIdTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $deviceId;
+    protected ?string $deviceId = null;
 }

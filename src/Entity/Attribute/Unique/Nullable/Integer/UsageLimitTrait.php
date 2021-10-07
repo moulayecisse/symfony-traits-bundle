@@ -9,5 +9,5 @@ trait UsageLimitTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\UsageLimitTrait;
 
     #[ORM\Column(type: "integer", unique: true, nullable: true)]
-    protected ?int $usageLimit;
+    protected ?int $usageLimit = null;
 }

@@ -11,5 +11,5 @@ trait NamespaceTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $namespace;
+    protected ?string $namespace = null;
 }

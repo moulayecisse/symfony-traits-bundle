@@ -9,5 +9,5 @@ trait StatusTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\StatusTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $status;
+    protected ?string $status = null;
 }

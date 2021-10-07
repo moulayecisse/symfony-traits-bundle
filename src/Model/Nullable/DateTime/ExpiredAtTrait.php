@@ -6,7 +6,7 @@ use DateTime;
 
 trait ExpiredAtTrait
 {
-    protected ?DateTime $expiredAt;
+    protected ?DateTime $expiredAt = null;
 
     public function getExpiredAt(): ?DateTime
     {

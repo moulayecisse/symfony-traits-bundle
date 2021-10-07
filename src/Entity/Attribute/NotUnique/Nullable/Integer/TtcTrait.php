@@ -9,5 +9,5 @@ trait TtcTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\TtcTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $ttc;
+    protected ?int $ttc = null;
 }

@@ -11,5 +11,5 @@ trait VatTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $vat;
+    protected ?int $vat = null;
 }

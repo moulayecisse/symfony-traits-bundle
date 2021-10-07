@@ -11,5 +11,5 @@ trait CityTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $city;
+    protected ?string $city = null;
 }

@@ -11,5 +11,5 @@ trait PasswordRepeatTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $passwordRepeat;
+    protected ?string $passwordRepeat = null;
 }

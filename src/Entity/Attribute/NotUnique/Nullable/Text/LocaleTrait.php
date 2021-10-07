@@ -9,5 +9,5 @@ trait LocaleTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\LocaleTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $locale;
+    protected ?string $locale = null;
 }

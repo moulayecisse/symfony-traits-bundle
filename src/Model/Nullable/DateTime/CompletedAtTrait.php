@@ -6,7 +6,7 @@ use DateTime;
 
 trait CompletedAtTrait
 {
-    protected ?DateTime $completedAt;
+    protected ?DateTime $completedAt = null;
 
     public function getCompletedAt(): ?DateTime
     {

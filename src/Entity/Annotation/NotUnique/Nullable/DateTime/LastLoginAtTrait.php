@@ -12,5 +12,5 @@ trait LastLoginAtTrait
     /**
      * @ORM\Column(type="datetime", unique=false, nullable=true)
      */
-    protected ?DateTime $lastLoginAt;
+    protected ?DateTime $lastLoginAt = null;
 }

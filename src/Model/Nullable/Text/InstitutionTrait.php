@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait InstitutionTrait
 {
-    protected ?string $institution;
+    protected ?string $institution = null;
 
     public function getInstitution(): ?string
     {

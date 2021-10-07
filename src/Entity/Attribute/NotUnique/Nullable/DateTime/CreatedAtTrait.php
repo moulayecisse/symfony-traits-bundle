@@ -10,5 +10,5 @@ trait CreatedAtTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\CreatedAtTrait;
 
     #[ORM\Column(type: "datetime", unique: false, nullable: true)]
-    protected ?DateTime $createdAt;
+    protected ?DateTime $createdAt = null;
 }

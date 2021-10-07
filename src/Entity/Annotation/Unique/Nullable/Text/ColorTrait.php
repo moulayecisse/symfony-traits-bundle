@@ -11,5 +11,5 @@ trait ColorTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $color;
+    protected ?string $color = null;
 }

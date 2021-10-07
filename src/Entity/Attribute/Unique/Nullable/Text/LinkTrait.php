@@ -9,5 +9,5 @@ trait LinkTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\LinkTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $link;
+    protected ?string $link = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait ProfessionTrait
 {
-    protected ?string $profession;
+    protected ?string $profession = null;
 
     public function getProfession(): ?string
     {

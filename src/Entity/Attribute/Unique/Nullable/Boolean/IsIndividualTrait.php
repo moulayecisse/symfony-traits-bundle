@@ -9,5 +9,5 @@ trait IsIndividualTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsIndividualTrait;
 
     #[ORM\Column(type: "boolean", unique: true, nullable: true)]
-    protected ?bool $isIndividual;
+    protected ?bool $isIndividual = null;
 }

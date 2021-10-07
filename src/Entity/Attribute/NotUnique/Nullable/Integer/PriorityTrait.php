@@ -9,5 +9,5 @@ trait PriorityTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\PriorityTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $priority;
+    protected ?int $priority = null;
 }

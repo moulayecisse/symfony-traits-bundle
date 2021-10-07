@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait StudentCountTrait
 {
-    protected ?int $studentCount;
+    protected ?int $studentCount = null;
 
     public function getStudentCount(): ?int
     {

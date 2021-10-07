@@ -11,5 +11,5 @@ trait TitleTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $title;
+    protected ?string $title = null;
 }

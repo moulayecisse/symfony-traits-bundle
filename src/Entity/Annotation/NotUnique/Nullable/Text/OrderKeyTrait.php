@@ -11,5 +11,5 @@ trait OrderKeyTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $orderKey;
+    protected ?string $orderKey = null;
 }

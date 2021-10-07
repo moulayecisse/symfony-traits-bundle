@@ -9,5 +9,5 @@ trait IsActiveTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsActiveTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $isActive;
+    protected ?bool $isActive = null;
 }

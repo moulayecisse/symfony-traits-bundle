@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait FileTrait
 {
-    protected ?string $file;
+    protected ?string $file = null;
 
     public function getFile(): ?string
     {

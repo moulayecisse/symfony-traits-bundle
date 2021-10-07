@@ -9,5 +9,5 @@ trait IsbnTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\IsbnTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $isbn;
+    protected ?string $isbn = null;
 }

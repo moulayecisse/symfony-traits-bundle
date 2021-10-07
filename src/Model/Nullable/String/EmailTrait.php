@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait EmailTrait
 {
-    protected ?string $email;
+    protected ?string $email = null;
 
     public function getEmail(): ?string
     {

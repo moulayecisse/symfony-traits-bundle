@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsLocalTrait
 {
-    protected ?bool $isLocal;
+    protected ?bool $isLocal = null;
 
     public function getIsLocal(): ?bool
     {

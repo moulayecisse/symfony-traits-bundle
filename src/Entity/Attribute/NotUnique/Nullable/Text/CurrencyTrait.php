@@ -9,5 +9,5 @@ trait CurrencyTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\CurrencyTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $currency;
+    protected ?string $currency = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait DeviceIdTrait
 {
-    protected ?string $deviceId;
+    protected ?string $deviceId = null;
 
     public function getDeviceId(): ?string
     {

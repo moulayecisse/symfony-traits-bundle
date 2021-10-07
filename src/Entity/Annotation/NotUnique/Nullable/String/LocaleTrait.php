@@ -11,5 +11,5 @@ trait LocaleTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $locale;
+    protected ?string $locale = null;
 }

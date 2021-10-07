@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait MinimumAmountTrait
 {
-    protected ?int $minimumAmount;
+    protected ?int $minimumAmount = null;
 
     public function getMinimumAmount(): ?int
     {

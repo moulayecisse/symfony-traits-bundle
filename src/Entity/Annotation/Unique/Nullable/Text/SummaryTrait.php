@@ -11,5 +11,5 @@ trait SummaryTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $summary;
+    protected ?string $summary = null;
 }

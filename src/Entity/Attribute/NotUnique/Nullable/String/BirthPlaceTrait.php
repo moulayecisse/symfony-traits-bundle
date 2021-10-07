@@ -9,5 +9,5 @@ trait BirthPlaceTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\BirthPlaceTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $birthPlace;
+    protected ?string $birthPlace = null;
 }

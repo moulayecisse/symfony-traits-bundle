@@ -9,5 +9,5 @@ trait BriefContentTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\BriefContentTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $briefContent;
+    protected ?string $briefContent = null;
 }

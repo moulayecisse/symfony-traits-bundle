@@ -11,5 +11,5 @@ trait ResumeTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $resume;
+    protected ?string $resume = null;
 }

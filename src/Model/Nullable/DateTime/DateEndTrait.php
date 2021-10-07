@@ -6,7 +6,7 @@ use DateTime;
 
 trait DateEndTrait
 {
-    protected ?DateTime $dateEnd;
+    protected ?DateTime $dateEnd = null;
 
     public function getDateEnd(): ?DateTime
     {

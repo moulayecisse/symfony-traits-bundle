@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait PageNumberTrait
 {
-    protected ?int $pageNumber;
+    protected ?int $pageNumber = null;
 
     public function getPageNumber(): int
     {

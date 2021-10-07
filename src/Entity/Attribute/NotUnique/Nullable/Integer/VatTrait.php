@@ -9,5 +9,5 @@ trait VatTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Integer\VatTrait;
 
     #[ORM\Column(type: "integer", unique: false, nullable: true)]
-    protected ?int $vat;
+    protected ?int $vat = null;
 }

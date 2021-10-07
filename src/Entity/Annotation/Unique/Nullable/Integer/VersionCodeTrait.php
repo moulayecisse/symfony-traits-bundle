@@ -11,5 +11,5 @@ trait VersionCodeTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $versionCode;
+    protected ?int $versionCode = null;
 }

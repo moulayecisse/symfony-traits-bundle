@@ -9,5 +9,5 @@ trait IsDraftTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsDraftTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $isDraft;
+    protected ?bool $isDraft = null;
 }

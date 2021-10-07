@@ -11,5 +11,5 @@ trait IsAvailableTrait
     /**
      * @ORM\Column(type="boolean", unique=true, nullable=true)
      */
-    protected ?bool $isAvailable;
+    protected ?bool $isAvailable = null;
 }

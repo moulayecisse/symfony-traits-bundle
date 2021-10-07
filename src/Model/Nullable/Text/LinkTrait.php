@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait LinkTrait
 {
-    protected ?string $link;
+    protected ?string $link = null;
 
     public function getLink(): ?string
     {

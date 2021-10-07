@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait FullDescriptionTrait
 {
-    protected ?string $fullDescription;
+    protected ?string $fullDescription = null;
 
     public function getFullDescription(): ?string
     {

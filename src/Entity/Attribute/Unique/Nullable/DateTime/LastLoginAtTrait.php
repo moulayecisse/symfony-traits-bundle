@@ -10,5 +10,5 @@ trait LastLoginAtTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\LastLoginAtTrait;
 
     #[ORM\Column(type: "datetime", unique: true, nullable: true)]
-    protected ?DateTime $lastLoginAt;
+    protected ?DateTime $lastLoginAt = null;
 }

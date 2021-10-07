@@ -11,5 +11,5 @@ trait PathTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $path;
+    protected ?string $path = null;
 }

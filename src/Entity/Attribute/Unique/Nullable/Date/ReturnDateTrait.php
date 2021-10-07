@@ -10,5 +10,5 @@ trait ReturnDateTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Date\ReturnDateTrait;
 
     #[ORM\Column(type: "date", unique: true, nullable: true)]
-    protected ?DateTime $returnDate;
+    protected ?DateTime $returnDate = null;
 }

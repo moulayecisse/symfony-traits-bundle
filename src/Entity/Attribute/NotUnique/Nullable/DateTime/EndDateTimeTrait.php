@@ -10,5 +10,5 @@ trait EndDateTimeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\EndDateTimeTrait;
 
     #[ORM\Column(type: "datetime", unique: false, nullable: true)]
-    protected ?DateTime $endDateTime;
+    protected ?DateTime $endDateTime = null;
 }

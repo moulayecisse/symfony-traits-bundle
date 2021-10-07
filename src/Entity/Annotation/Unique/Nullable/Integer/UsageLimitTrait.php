@@ -11,5 +11,5 @@ trait UsageLimitTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $usageLimit;
+    protected ?int $usageLimit = null;
 }

@@ -11,5 +11,5 @@ trait DiscountTotalTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $discountTotal;
+    protected ?int $discountTotal = null;
 }

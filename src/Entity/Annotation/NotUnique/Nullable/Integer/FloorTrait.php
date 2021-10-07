@@ -11,5 +11,5 @@ trait FloorTrait
     /**
      * @ORM\Column(type="integer", unique=false, nullable=true)
      */
-    protected ?int $floor;
+    protected ?int $floor = null;
 }

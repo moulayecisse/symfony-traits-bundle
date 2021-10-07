@@ -9,5 +9,5 @@ trait ImageTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ImageTrait;
 
     #[ORM\Column(type: "text", unique: true, nullable: true)]
-    protected ?string $image;
+    protected ?string $image = null;
 }

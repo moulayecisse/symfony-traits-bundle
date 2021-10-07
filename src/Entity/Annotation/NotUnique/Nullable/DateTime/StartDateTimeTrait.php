@@ -12,5 +12,5 @@ trait StartDateTimeTrait
     /**
      * @ORM\Column(type="datetime", unique=false, nullable=true)
      */
-    protected ?DateTime $startDateTime;
+    protected ?DateTime $startDateTime = null;
 }

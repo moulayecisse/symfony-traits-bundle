@@ -11,5 +11,5 @@ trait CustomerNoteTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $customerNote;
+    protected ?string $customerNote = null;
 }

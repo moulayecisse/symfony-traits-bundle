@@ -11,5 +11,5 @@ trait CountTrait
     /**
      * @ORM\Column(type="integer", unique=true, nullable=true)
      */
-    protected ?int $count;
+    protected ?int $count = null;
 }

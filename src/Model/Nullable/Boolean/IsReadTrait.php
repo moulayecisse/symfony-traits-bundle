@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsReadTrait
 {
-    protected ?bool $isRead;
+    protected ?bool $isRead = null;
 
     public function getIsRead(): ?bool
     {

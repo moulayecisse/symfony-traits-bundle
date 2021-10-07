@@ -9,5 +9,5 @@ trait ContextTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\ContextTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $context;
+    protected ?string $context = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait ContextTrait
 {
-    protected ?string $context;
+    protected ?string $context = null;
 
     public function getContext(): ?string
     {

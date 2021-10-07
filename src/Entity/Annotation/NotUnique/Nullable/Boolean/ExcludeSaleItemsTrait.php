@@ -11,5 +11,5 @@ trait ExcludeSaleItemsTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $excludeSaleItems;
+    protected ?bool $excludeSaleItems = null;
 }

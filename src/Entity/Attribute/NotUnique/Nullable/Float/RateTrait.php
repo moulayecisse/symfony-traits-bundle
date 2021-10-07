@@ -8,5 +8,5 @@ trait RateTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Float\RateTrait;
 
     #[ORM\Column(type: "float", unique: false, nullable: true)]
-    protected ?float $rate;
+    protected ?float $rate = null;
 }

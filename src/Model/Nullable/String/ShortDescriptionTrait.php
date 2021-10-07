@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait ShortDescriptionTrait
 {
-    protected ?string $shortDescription;
+    protected ?string $shortDescription = null;
 
     public function getShortDescription(): string
     {

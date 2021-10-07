@@ -8,5 +8,5 @@ trait AmountTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Float\AmountTrait;
 
     #[ORM\Column(type: "float", unique: true, nullable: true)]
-    protected ?float $amount;
+    protected ?float $amount = null;
 }

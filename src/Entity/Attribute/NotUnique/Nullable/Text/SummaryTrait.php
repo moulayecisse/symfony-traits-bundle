@@ -9,5 +9,5 @@ trait SummaryTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\SummaryTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $summary;
+    protected ?string $summary = null;
 }

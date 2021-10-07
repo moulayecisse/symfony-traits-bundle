@@ -11,5 +11,5 @@ trait BriefContentTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $briefContent;
+    protected ?string $briefContent = null;
 }

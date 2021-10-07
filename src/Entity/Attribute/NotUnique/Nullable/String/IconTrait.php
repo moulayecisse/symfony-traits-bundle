@@ -9,5 +9,5 @@ trait IconTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\IconTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $icon;
+    protected ?string $icon = null;
 }

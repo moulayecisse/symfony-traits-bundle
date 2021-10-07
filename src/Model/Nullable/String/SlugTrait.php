@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait SlugTrait
 {
-    protected ?string $slug;
+    protected ?string $slug = null;
 
     public function getSlug(): ?string
     {

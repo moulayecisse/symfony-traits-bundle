@@ -12,5 +12,5 @@ trait ExpiredAtTrait
     /**
      * @ORM\Column(type="datetime", unique=true, nullable=true)
      */
-    protected ?DateTime $expiredAt;
+    protected ?DateTime $expiredAt = null;
 }

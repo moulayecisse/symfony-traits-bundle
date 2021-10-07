@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait CurrencyTrait
 {
-    protected ?string $currency;
+    protected ?string $currency = null;
 
     public function getCurrency(): ?string
     {

@@ -10,5 +10,5 @@ trait OpeningTimeTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Time\OpeningTimeTrait;
 
     #[ORM\Column(type: "time", unique: false, nullable: true)]
-    protected ?DateTime $openingTime;
+    protected ?DateTime $openingTime = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait IconTrait
 {
-    protected ?string $icon;
+    protected ?string $icon = null;
 
     public function getIcon(): ?string
     {

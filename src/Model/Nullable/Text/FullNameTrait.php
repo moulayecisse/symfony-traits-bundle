@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait FullNameTrait
 {
-    protected ?string $fullName;
+    protected ?string $fullName = null;
 
     public function getFullName(): ?string
     {

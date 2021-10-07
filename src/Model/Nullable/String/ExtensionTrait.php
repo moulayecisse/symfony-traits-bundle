@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait ExtensionTrait
 {
-    protected ?string $extension;
+    protected ?string $extension = null;
 
     public function getExtension(): ?string
     {

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean;
 
 trait IsVisibleTrait
 {
-    protected ?bool $isVisible;
+    protected ?bool $isVisible = null;
 
     public function getIsVisible(): ?bool
     {

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait VersionCodeTrait
 {
-    protected ?int $versionCode;
+    protected ?int $versionCode = null;
 
     public function getVersionCode(): ?int
     {

@@ -11,5 +11,5 @@ trait FileTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $file;
+    protected ?string $file = null;
 }

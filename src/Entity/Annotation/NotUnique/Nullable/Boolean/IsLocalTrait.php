@@ -11,5 +11,5 @@ trait IsLocalTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isLocal;
+    protected ?bool $isLocal = null;
 }

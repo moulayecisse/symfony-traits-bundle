@@ -11,5 +11,5 @@ trait UpdatedByTrait
 
     #[ORM\ManyToOne(targetEntity: "App\Entity\User")]
     #[ORM\JoinColumn(unique: false, nullable: true)]
-    protected ?UserInterface $updatedBy;
+    protected ?UserInterface $updatedBy = null;
 }

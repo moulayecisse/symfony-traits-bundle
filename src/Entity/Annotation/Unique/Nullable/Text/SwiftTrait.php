@@ -11,5 +11,5 @@ trait SwiftTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $swift;
+    protected ?string $swift = null;
 }

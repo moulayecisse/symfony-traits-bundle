@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait PriorityTrait
 {
-    protected ?int $priority;
+    protected ?int $priority = null;
 
     public function getPriority(): ?int
     {

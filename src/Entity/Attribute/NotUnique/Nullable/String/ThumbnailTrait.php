@@ -9,5 +9,5 @@ trait ThumbnailTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\String\ThumbnailTrait;
 
     #[ORM\Column(type: "string", length: 255, unique: false, nullable: true)]
-    protected ?string $thumbnail;
+    protected ?string $thumbnail = null;
 }

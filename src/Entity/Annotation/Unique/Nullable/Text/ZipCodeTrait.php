@@ -11,5 +11,5 @@ trait ZipCodeTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $zipCode;
+    protected ?string $zipCode = null;
 }

@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait PlaceholderTrait
 {
-    protected ?string $placeholder;
+    protected ?string $placeholder = null;
 
     public function getPlaceholder(): ?string
     {

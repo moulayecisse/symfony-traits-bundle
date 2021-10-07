@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait AccountTrait
 {
-    protected ?string $account;
+    protected ?string $account = null;
 
     public function getAccount(): ?string
     {

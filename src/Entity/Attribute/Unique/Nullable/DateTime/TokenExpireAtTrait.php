@@ -10,5 +10,5 @@ trait TokenExpireAtTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\TokenExpireAtTrait;
 
     #[ORM\Column(type: "datetime", unique: true, nullable: true)]
-    protected ?DateTime $tokenExpireAt;
+    protected ?DateTime $tokenExpireAt = null;
 }

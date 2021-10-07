@@ -9,5 +9,5 @@ trait IsVerifiedTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsVerifiedTrait;
 
     #[ORM\Column(type: "boolean", unique: false, nullable: true)]
-    protected ?bool $isVerified;
+    protected ?bool $isVerified = null;
 }

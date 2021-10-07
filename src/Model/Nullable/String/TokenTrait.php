@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait TokenTrait
 {
-    protected ?string $token;
+    protected ?string $token = null;
 
     public function getToken(): ?string
     {

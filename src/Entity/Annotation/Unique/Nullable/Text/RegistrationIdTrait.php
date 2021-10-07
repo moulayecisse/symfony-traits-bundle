@@ -11,5 +11,5 @@ trait RegistrationIdTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $registrationId;
+    protected ?string $registrationId = null;
 }

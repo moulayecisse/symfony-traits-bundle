@@ -11,5 +11,5 @@ trait IsbnTrait
     /**
      * @ORM\Column(type="string", length=255, unique=true, nullable=true)
      */
-    protected ?string $isbn;
+    protected ?string $isbn = null;
 }

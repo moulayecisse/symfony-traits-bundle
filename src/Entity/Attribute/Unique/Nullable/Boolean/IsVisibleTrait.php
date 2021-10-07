@@ -9,5 +9,5 @@ trait IsVisibleTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Boolean\IsVisibleTrait;
 
     #[ORM\Column(type: "boolean", unique: true, nullable: true)]
-    protected ?bool $isVisible;
+    protected ?bool $isVisible = null;
 }

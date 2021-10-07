@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Text;
 
 trait MessageTrait
 {
-    protected ?string $message;
+    protected ?string $message = null;
 
     public function getMessage(): ?string
     {

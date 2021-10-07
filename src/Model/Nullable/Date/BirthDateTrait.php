@@ -6,7 +6,7 @@ use DateTime;
 
 trait BirthDateTrait
 {
-    protected ?DateTime $birthDate;
+    protected ?DateTime $birthDate = null;
 
     public function getBirthDate(): ?DateTime
     {

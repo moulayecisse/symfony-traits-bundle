@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait ThumbnailTrait
 {
-    protected ?string $thumbnail;
+    protected ?string $thumbnail = null;
 
     public function getThumbnail(): ?string
     {

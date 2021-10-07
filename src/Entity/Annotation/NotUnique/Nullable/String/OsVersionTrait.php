@@ -11,5 +11,5 @@ trait OsVersionTrait
     /**
      * @ORM\Column(type="string", length=255, unique=false, nullable=true)
      */
-    protected ?string $osVersion;
+    protected ?string $osVersion = null;
 }

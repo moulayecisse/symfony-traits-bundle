@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\String;
 
 trait GenderTrait
 {
-    protected ?string $gender;
+    protected ?string $gender = null;
 
     public function getGender(): ?string
     {

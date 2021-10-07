@@ -10,5 +10,5 @@ trait PriceDiscountTrait
     /**
      * @ORM\Column(type="decimal", precision=12, scale=2, unique=false, nullable=true)
      */
-    protected ?int $priceDiscount;
+    protected ?int $priceDiscount = null;
 }

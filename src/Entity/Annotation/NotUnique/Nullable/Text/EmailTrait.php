@@ -11,5 +11,5 @@ trait EmailTrait
     /**
      * @ORM\Column(type="text", unique=false, nullable=true)
      */
-    protected ?string $email;
+    protected ?string $email = null;
 }

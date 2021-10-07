@@ -9,5 +9,5 @@ trait CustomerNoteTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\Text\CustomerNoteTrait;
 
     #[ORM\Column(type: "text", unique: false, nullable: true)]
-    protected ?string $customerNote;
+    protected ?string $customerNote = null;
 }

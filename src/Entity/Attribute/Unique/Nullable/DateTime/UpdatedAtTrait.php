@@ -10,5 +10,5 @@ trait UpdatedAtTrait
     use \Cisse\Bundle\TraitsBundle\Model\Nullable\DateTime\UpdatedAtTrait;
 
     #[ORM\Column(type: "datetime", unique: true, nullable: true)]
-    protected ?DateTime $updatedAt;
+    protected ?DateTime $updatedAt = null;
 }

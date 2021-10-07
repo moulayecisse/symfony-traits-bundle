@@ -11,5 +11,5 @@ trait IsActiveTrait
     /**
      * @ORM\Column(type="boolean", unique=false, nullable=true)
      */
-    protected ?bool $isActive;
+    protected ?bool $isActive = null;
 }

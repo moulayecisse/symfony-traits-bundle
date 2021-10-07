@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Integer;
 
 trait TtcTrait
 {
-    protected ?int $ttc;
+    protected ?int $ttc = null;
 
     public function getTtc(): ?int
     {

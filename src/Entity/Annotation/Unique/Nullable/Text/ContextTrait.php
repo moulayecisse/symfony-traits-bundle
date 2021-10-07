@@ -11,5 +11,5 @@ trait ContextTrait
     /**
      * @ORM\Column(type="text", unique=true, nullable=true)
      */
-    protected ?string $context;
+    protected ?string $context = null;
 }
