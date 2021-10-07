@@ -71,3 +71,5 @@ gen### Symfony template
 /.web-server-pid
 
 composer.lock
+
+.php_cs.cache
