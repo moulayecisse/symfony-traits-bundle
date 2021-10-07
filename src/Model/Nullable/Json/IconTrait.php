@@ -28,16 +28,6 @@ trait IconTrait
         return $this->setIconValue('name', $name);
     }
 
-    public function getIconType(): ?string
-    {
-        return $this->icon['type'] ?? null;
-    }
-
-    public function setIconType(?string $type): self
-    {
-        return $this->setIconValue('type', $type);
-    }
-
     protected function setIconValue(?string $name, ?string $value): self
     {
         if (!$this->icon) {
@@ -51,5 +41,15 @@ trait IconTrait
         }
 
         return $this;
+    }
+
+    public function getIconType(): ?string
+    {
+        return $this->icon['type'] ?? null;
+    }
+
+    public function setIconType(?string $type): self
+    {
+        return $this->setIconValue('type', $type);
     }
 }

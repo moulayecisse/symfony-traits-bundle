@@ -2,8 +2,8 @@
 
 namespace Cisse\Bundle\TraitsBundle\Entity\Annotation\Unique\NotNullable\Association;
 
-use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 trait UpdatedByTrait
 {

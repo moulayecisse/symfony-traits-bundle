@@ -1,19 +1,20 @@
 <?php
+
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Float;
 
 trait RateTrait
 {
     protected ?float $rate = null;
 
-    public function setRate(?float $rate) : self
+    public function getRate(): ?float
+    {
+        return $this->rate;
+    }
+
+    public function setRate(?float $rate): self
     {
         $this->rate = $rate;
 
         return $this;
-    }
-
-    public function getRate() : ?float
-    {
-        return $this->rate;
     }
 }

@@ -2,9 +2,9 @@
 
 namespace Cisse\Bundle\TraitsBundle\Model\NotNullable\Json;
 
+use BadMethodCallException;
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
 use Cisse\Bundle\TraitsBundle\Utility\StringUtility;
-use BadMethodCallException;
 use Symfony\Bundle\MakerBundle\Str;
 
 trait ExtrasTrait
@@ -27,15 +27,15 @@ trait ExtrasTrait
             }
         }
 
-        throw new BadMethodCallException("Undefined method '$method'. The method name must start with " . 'either findBy, findOneBy or countBy!');
+        throw new BadMethodCallException("Undefined method '$method'. The method name must start with ".'either findBy, findOneBy or countBy!');
     }
 
     public function getExtraFieldByName(string $fieldName = '')
     {
         $extras = $this->getExtras();
 
-        if (isset($extras[StringUtility::asLowerCamelCase($fieldName) . StringUtility::asClassName(ApplicationUtility::locale())])) {
-            return $extras[StringUtility::asLowerCamelCase($fieldName) . StringUtility::asClassName(ApplicationUtility::locale())];
+        if (isset($extras[StringUtility::asLowerCamelCase($fieldName).StringUtility::asClassName(ApplicationUtility::locale())])) {
+            return $extras[StringUtility::asLowerCamelCase($fieldName).StringUtility::asClassName(ApplicationUtility::locale())];
         }
 
         return $extras[StringUtility::asLowerCamelCase($fieldName)] ?? null;
@@ -57,8 +57,8 @@ trait ExtrasTrait
     {
         $extras = $this->getExtras();
 
-        if (isset($extras[StringUtility::asLowerCamelCase($fieldName) . StringUtility::asClassName(ApplicationUtility::locale())])) {
-            $extras[StringUtility::asLowerCamelCase($fieldName) . StringUtility::asClassName(ApplicationUtility::locale())] =
+        if (isset($extras[StringUtility::asLowerCamelCase($fieldName).StringUtility::asClassName(ApplicationUtility::locale())])) {
+            $extras[StringUtility::asLowerCamelCase($fieldName).StringUtility::asClassName(ApplicationUtility::locale())] =
                 $extraField;
         } else {
             $extras[StringUtility::asLowerCamelCase($fieldName)] = $extraField;
@@ -74,7 +74,7 @@ trait ExtrasTrait
         foreach ($this->getExtras() as $name => $extraField) {
             if (
                 $name === StringUtility::asLowerCamelCase($fieldName)
-                || $name === StringUtility::asLowerCamelCase($fieldName) . StringUtility::asClassName(ApplicationUtility::locale())
+                || $name === StringUtility::asLowerCamelCase($fieldName).StringUtility::asClassName(ApplicationUtility::locale())
             ) {
                 return true;
             }
@@ -86,14 +86,14 @@ trait ExtrasTrait
     public function getTranslatedExtraFieldByName(string $fieldName = '', $locale = null)
     {
         return $this->getExtraFieldByName(
-            $fieldName . StringUtility::asClassName($locale ?? ApplicationUtility::locale())
+            $fieldName.StringUtility::asClassName($locale ?? ApplicationUtility::locale())
         );
     }
 
     public function setTranslatedExtraFieldByName(string $fieldName = '', $extraField = [], $locale = null): self
     {
         return $this->setExtraFieldByName(
-            $fieldName . StringUtility::asClassName($locale ?? ApplicationUtility::locale()),
+            $fieldName.StringUtility::asClassName($locale ?? ApplicationUtility::locale()),
             $extraField
         );
     }

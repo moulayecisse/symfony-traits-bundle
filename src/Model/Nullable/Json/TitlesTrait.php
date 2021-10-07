@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait TitlesTrait
 {
     protected ?array $titles = [];
-
-   public function getTitle(?string $locale = null): ?string
-    {
-        return $this->titles[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setTitle(?string $title, ?string $locale = null): self
-    {
-        $this->titles[ApplicationUtility::locale($locale)] = $title;
-
-        return $this;
-    }
 
     public function getTitles(): ?array
     {
@@ -33,9 +20,14 @@ trait TitlesTrait
         return $this;
     }
 
-   public function getTitleFr(): ?string
+    public function getTitleFr(): ?string
     {
         return $this->getTitle('fr');
+    }
+
+    public function getTitle(?string $locale = null): ?string
+    {
+        return $this->titles[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setTitleFr(?string $title): self
@@ -43,7 +35,14 @@ trait TitlesTrait
         return $this->setTitle($title, 'fr');
     }
 
-   public function getTitleEn(): ?string
+    public function setTitle(?string $title, ?string $locale = null): self
+    {
+        $this->titles[ApplicationUtility::locale($locale)] = $title;
+
+        return $this;
+    }
+
+    public function getTitleEn(): ?string
     {
         return $this->getTitle('en');
     }

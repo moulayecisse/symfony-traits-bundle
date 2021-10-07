@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait LabelsTrait
 {
     protected ?array $labels = [];
-
-   public function getLabel(?string $locale = null): ?string
-    {
-        return $this->labels[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setLabel(?string $label, ?string $locale = null): self
-    {
-        $this->labels[ApplicationUtility::locale($locale)] = $label;
-
-        return $this;
-    }
 
     public function getLabels(): ?array
     {
@@ -33,9 +20,14 @@ trait LabelsTrait
         return $this;
     }
 
-   public function getLabelFr(): ?string
+    public function getLabelFr(): ?string
     {
         return $this->getLabel('fr');
+    }
+
+    public function getLabel(?string $locale = null): ?string
+    {
+        return $this->labels[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setLabelFr(?string $label): self
@@ -43,7 +35,14 @@ trait LabelsTrait
         return $this->setLabel($label, 'fr');
     }
 
-   public function getLabelEn(): ?string
+    public function setLabel(?string $label, ?string $locale = null): self
+    {
+        $this->labels[ApplicationUtility::locale($locale)] = $label;
+
+        return $this;
+    }
+
+    public function getLabelEn(): ?string
     {
         return $this->getLabel('en');
     }

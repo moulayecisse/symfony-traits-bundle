@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait SlugsTrait
 {
     protected ?array $slugs = [];
-
-   public function getSlug(?string $locale = null): ?string
-    {
-        return $this->slugs[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setSlug(?string $slug, ?string $locale = null): self
-    {
-        $this->slugs[ApplicationUtility::locale($locale)] = $slug;
-
-        return $this;
-    }
 
     public function getSlugs(): ?array
     {
@@ -33,9 +20,14 @@ trait SlugsTrait
         return $this;
     }
 
-   public function getSlugFr(): ?string
+    public function getSlugFr(): ?string
     {
         return $this->getSlug('fr');
+    }
+
+    public function getSlug(?string $locale = null): ?string
+    {
+        return $this->slugs[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setSlugFr(?string $slug): self
@@ -43,7 +35,14 @@ trait SlugsTrait
         return $this->setSlug($slug, 'fr');
     }
 
-   public function getSlugEn(): ?string
+    public function setSlug(?string $slug, ?string $locale = null): self
+    {
+        $this->slugs[ApplicationUtility::locale($locale)] = $slug;
+
+        return $this;
+    }
+
+    public function getSlugEn(): ?string
     {
         return $this->getSlug('en');
     }

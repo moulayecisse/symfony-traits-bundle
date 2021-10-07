@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait SubjectsTrait
 {
     protected ?array $subjects = [];
-
-   public function getSubject(?string $locale = null): ?string
-    {
-        return $this->subjects[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setSubject(?string $subject, ?string $locale = null): self
-    {
-        $this->subjects[ApplicationUtility::locale($locale)] = $subject;
-
-        return $this;
-    }
 
     public function getSubjects(): ?array
     {
@@ -33,9 +20,14 @@ trait SubjectsTrait
         return $this;
     }
 
-   public function getSubjectFr(): ?string
+    public function getSubjectFr(): ?string
     {
         return $this->getSubject('fr');
+    }
+
+    public function getSubject(?string $locale = null): ?string
+    {
+        return $this->subjects[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setSubjectFr(?string $subject): self
@@ -43,7 +35,14 @@ trait SubjectsTrait
         return $this->setSubject($subject, 'fr');
     }
 
-   public function getSubjectEn(): ?string
+    public function setSubject(?string $subject, ?string $locale = null): self
+    {
+        $this->subjects[ApplicationUtility::locale($locale)] = $subject;
+
+        return $this;
+    }
+
+    public function getSubjectEn(): ?string
     {
         return $this->getSubject('en');
     }

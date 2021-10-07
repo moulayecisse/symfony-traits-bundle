@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait ButtonsTrait
 {
     protected ?array $buttons = [];
-
-   public function getButton(?string $locale = null): ?string
-    {
-        return $this->buttons[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setButton(?string $button, ?string $locale = null): self
-    {
-        $this->buttons[ApplicationUtility::locale($locale)] = $button;
-
-        return $this;
-    }
 
     public function getButtons(): ?array
     {
@@ -33,9 +20,14 @@ trait ButtonsTrait
         return $this;
     }
 
-   public function getButtonFr(): ?string
+    public function getButtonFr(): ?string
     {
         return $this->getButton('fr');
+    }
+
+    public function getButton(?string $locale = null): ?string
+    {
+        return $this->buttons[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setButtonFr(?string $button): self
@@ -43,7 +35,14 @@ trait ButtonsTrait
         return $this->setButton($button, 'fr');
     }
 
-   public function getButtonEn(): ?string
+    public function setButton(?string $button, ?string $locale = null): self
+    {
+        $this->buttons[ApplicationUtility::locale($locale)] = $button;
+
+        return $this;
+    }
+
+    public function getButtonEn(): ?string
     {
         return $this->getButton('en');
     }

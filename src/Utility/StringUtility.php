@@ -5,8 +5,8 @@ namespace Cisse\Bundle\TraitsBundle\Utility;
 //use Doctrine\Common\Inflector\Inflector as LegacyInflector;
 use Doctrine\Inflector\Inflector;
 use Doctrine\Inflector\InflectorFactory;
-use JetBrains\PhpStorm\Pure;
 use Symfony\Component\DependencyInjection\Container;
+
 use function count;
 use function strlen;
 
@@ -35,19 +35,10 @@ class StringUtility
         return self::hasPrefix($value, $prefix) ? self::replaceFirst($prefix, '', $value) : $value;
     }
 
-    public static function removePrefixes(string $value, array $prefixes): string
-    {
-        foreach ($prefixes as $prefix) {
-            $value = self::removePrefix($value, $prefix);
-        }
-
-        return $value;
-    }
-
     /**
      * Looks for prefixes in strings in a case-insensitive way.
      */
-   public static function hasPrefix(string $value, string $prefix): bool
+    public static function hasPrefix(string $value, string $prefix): bool
     {
         return self::startsWith($prefix, $value);
     }
@@ -57,12 +48,23 @@ class StringUtility
         return str_starts_with($string, $search);
     }
 
-    public static function endsWith($search, $string): bool
+    public static function replaceFirst($search, $replace, $string): array|string|null
     {
-        return str_ends_with($string, $search);
+        $search = '/' . preg_quote($search, '/') . '/';
+
+        return preg_replace($search, $replace, $string, 1);
     }
 
-   public static function startsWithOneOf(string $string = '', array $array = []): bool
+    public static function removePrefixes(string $value, array $prefixes): string
+    {
+        foreach ($prefixes as $prefix) {
+            $value = self::removePrefix($value, $prefix);
+        }
+
+        return $value;
+    }
+
+    public static function startsWithOneOf(string $string = '', array $array = []): bool
     {
         foreach ($array as $search) {
             if (self::startsWith($search, $string)) {
@@ -72,7 +74,7 @@ class StringUtility
         return false;
     }
 
-   public static function endsWithOneOf(string $string = '', array $array = []): bool
+    public static function endsWithOneOf(string $string = '', array $array = []): bool
     {
         foreach ($array as $search) {
             if (self::endsWith($search, $string)) {
@@ -82,11 +84,9 @@ class StringUtility
         return false;
     }
 
-    public static function replaceFirst($search, $replace, $string): array|string|null
+    public static function endsWith($search, $string): bool
     {
-        $search = '/' . preg_quote($search, '/') . '/';
-
-        return preg_replace($search, $replace, $string, 1);
+        return str_ends_with($string, $search);
     }
 
     public static function asRoutePath(string $value): string
@@ -143,7 +143,7 @@ class StringUtility
      * already contains the suffix, it's not added twice. It's case-insensitive
      * (e.g. value: 'Foocommand' suffix: 'Command' -> result: 'FooCommand').
      */
-   public static function addSuffix(string $value, string $suffix): string
+    public static function addSuffix(string $value, string $suffix): string
     {
         return self::removeSuffix($value, $suffix) . $suffix;
     }
@@ -153,18 +153,9 @@ class StringUtility
      * string contains the suffix multiple times, only the last one is removed.
      * It's case-insensitive (e.g. value: 'Foocommand' suffix: 'Command' -> result: 'Foo').
      */
-   public static function removeSuffix(string $value, string $suffix): string
+    public static function removeSuffix(string $value, string $suffix): string
     {
         return self::hasSuffix($value, $suffix) ? substr($value, 0, -strlen($suffix)) : $value;
-    }
-
-   public static function removeSuffixes(string $value, array $suffixes): string
-    {
-        foreach ($suffixes as $suffix) {
-            $value = self::removeSuffix($value, $suffix);
-        }
-
-        return $value;
     }
 
     /**
@@ -175,7 +166,16 @@ class StringUtility
         return 0 === strcasecmp($suffix, substr($value, -strlen($suffix)));
     }
 
-   public static function getShortClassName(string $fullClassName): string
+    public static function removeSuffixes(string $value, array $suffixes): string
+    {
+        foreach ($suffixes as $suffix) {
+            $value = self::removeSuffix($value, $suffix);
+        }
+
+        return $value;
+    }
+
+    public static function getShortClassName(string $fullClassName): string
     {
         if (empty(self::getNamespace($fullClassName))) {
             return $fullClassName;
@@ -210,18 +210,14 @@ class StringUtility
         return self::asTwigVariable($value);
     }
 
-    public static function slugify(string $value): string
+    public static function asLowerCamelCase(string $str): string
     {
-        $value = trim($value);
-        $value = preg_replace('/[^a-zA-Z0-9_]/', '-', $value);
-        $value = preg_replace('/(?<=\\w)([A-Z])/', '-$1', $value);
-        $value = preg_replace('/_{2,}/', '-', $value);
-        return strtolower($value);
+        return lcfirst(self::asCamelCase($str));
     }
 
-    public static function urlify(string $value): string
+    public static function asCamelCase(string $str): string
     {
-        return str_replace('_', '-', self::slugify($value));
+        return strtr(ucwords(strtr($str, ['_' => ' ', '.' => ' ', '\\' => ' '])), [' ' => '']);
     }
 
 //    protected static function pluralize(string $word): string
@@ -233,23 +229,18 @@ class StringUtility
 //        return LegacyInflector::pluralize($word);
 //    }
 
-    protected static function getInflector(): Inflector
+    public static function urlify(string $value): string
     {
-        if (null === static::$inflector) {
-            static::$inflector = InflectorFactory::create()->build();
-        }
-
-        return static::$inflector;
+        return str_replace('_', '-', self::slugify($value));
     }
 
-   public static function asLowerCamelCase(string $str): string
+    public static function slugify(string $value): string
     {
-        return lcfirst(self::asCamelCase($str));
-    }
-
-    public static function asCamelCase(string $str): string
-    {
-        return strtr(ucwords(strtr($str, ['_' => ' ', '.' => ' ', '\\' => ' '])), [' ' => '']);
+        $value = trim($value);
+        $value = preg_replace('/[^a-zA-Z0-9_]/', '-', $value);
+        $value = preg_replace('/(?<=\\w)([A-Z])/', '-$1', $value);
+        $value = preg_replace('/_{2,}/', '-', $value);
+        return strtolower($value);
     }
 
     public static function pluralCamelCaseToSingular(string $camelCase): string
@@ -261,15 +252,6 @@ class StringUtility
 
         return self::asLowerCamelCase($reSnaked);
     }
-
-//    protected static function singularize(string $word): string
-//    {
-//        if (class_exists(Inflector::class)) {
-//            return static::getInflector()->singularize($word);
-//        }
-//
-//        return LegacyInflector::singularize($word);
-//    }
 
     public static function getRandomTerm(): string
     {
@@ -296,6 +278,15 @@ class StringUtility
 
         return sprintf('%s %s', $adjectives[array_rand($adjectives)], $nouns[array_rand($nouns)]);
     }
+
+//    protected static function singularize(string $word): string
+//    {
+//        if (class_exists(Inflector::class)) {
+//            return static::getInflector()->singularize($word);
+//        }
+//
+//        return LegacyInflector::singularize($word);
+//    }
 
     /**
      * Checks if the given name is a valid PHP variable name.
@@ -324,7 +315,7 @@ class StringUtility
         return str_replace('  ', ' ', ucfirst(trim(implode(' ', preg_split('/(?=[A-Z])/', $variableName)))));
     }
 
-   public static function toSingular($string)
+    public static function toSingular($string)
     {
         if (self::endsWith($string, 'ies')) {
             $string = self::replaceLast('ies', 'y', $string);
@@ -347,7 +338,7 @@ class StringUtility
         return $string;
     }
 
-   public static function prefixIfNotStartWith($prefix, $string): string
+    public static function prefixIfNotStartWith($prefix, $string): string
     {
         if (StringUtility::startsWith($prefix, $string)) {
             return $string;
@@ -361,7 +352,7 @@ class StringUtility
         return $prefix . $string;
     }
 
-   public static function suffixIfNotStartWith($suffix, $string): string
+    public static function suffixIfNotStartWith($suffix, $string): string
     {
         if (StringUtility::endsWith($suffix, $string)) {
             return $string;
@@ -424,17 +415,26 @@ class StringUtility
         return trim($text);
     }
 
-   public static function toPluriel(string $text): string
+    public static function toPluriel(string $text): string
     {
         return self::endsWith('y', $text)
             ? self::replaceLast('y', 'ies', $text)
             : "{$text}s";
     }
 
-   public static function toSing(string $text): string
+    public static function toSing(string $text): string
     {
         return self::endsWith('ies', $text)
             ? self::replaceLast('ies', 'y', $text)
             : self::removeSuffix($text, 's');
+    }
+
+    protected static function getInflector(): Inflector
+    {
+        if (null === static::$inflector) {
+            static::$inflector = InflectorFactory::create()->build();
+        }
+
+        return static::$inflector;
     }
 }

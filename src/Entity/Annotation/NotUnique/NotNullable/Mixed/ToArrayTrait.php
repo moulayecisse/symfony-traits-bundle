@@ -5,12 +5,13 @@ namespace Cisse\Bundle\TraitsBundle\Entity\Annotation\NotUnique\NotNullable\Mixe
 use App\Entity\AbstractEntity;
 use DateTime;
 use Doctrine\Common\Collections\Collection;
+
 use function Symfony\Component\String\u;
 
 trait ToArrayTrait
 {
     public function __toArray(
-        int   $depth = 2,
+        int $depth = 2,
         array $excludes = [
             '*.createdBy',
             '*.updatedBy',
@@ -18,8 +19,7 @@ trait ToArrayTrait
         array $includes = [],
         array $merges = [],
         array $options = []
-    ): array
-    {
+    ): array {
         $depth = $depth - 1;
         $array = [];
 

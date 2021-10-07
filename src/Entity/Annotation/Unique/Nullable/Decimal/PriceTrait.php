@@ -1,4 +1,5 @@
 <?php
+
 namespace Cisse\Bundle\TraitsBundle\Entity\Annotation\Unique\Nullable\Decimal;
 
 use Doctrine\ORM\Mapping as ORM;

@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\NotNullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait ContentsTrait
 {
     protected array $contents = [];
-
-   public function getContent(string $locale = null): string
-    {
-        return $this->contents[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setContent(string $content, string $locale = null): self
-    {
-        $this->contents[ApplicationUtility::locale($locale)] = $content;
-
-        return $this;
-    }
 
     public function getContents(): array
     {
@@ -33,9 +20,14 @@ trait ContentsTrait
         return $this;
     }
 
-   public function getContentFr(): string
+    public function getContentFr(): string
     {
         return $this->getContent('fr');
+    }
+
+    public function getContent(string $locale = null): string
+    {
+        return $this->contents[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setContentFr(string $content): self
@@ -43,7 +35,14 @@ trait ContentsTrait
         return $this->setContent($content, 'fr');
     }
 
-   public function getContentEn(): string
+    public function setContent(string $content, string $locale = null): self
+    {
+        $this->contents[ApplicationUtility::locale($locale)] = $content;
+
+        return $this;
+    }
+
+    public function getContentEn(): string
     {
         return $this->getContent('en');
     }

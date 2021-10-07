@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\NotNullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait SubTitlesTrait
 {
     protected array $subTitles = [];
-
-   public function getSubTitle(string $locale = null): string
-    {
-        return $this->subTitles[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setSubTitle(string $subTitle, string $locale = null): self
-    {
-        $this->subTitles[ApplicationUtility::locale($locale)] = $subTitle;
-
-        return $this;
-    }
 
     public function getSubTitles(): array
     {
@@ -33,9 +20,14 @@ trait SubTitlesTrait
         return $this;
     }
 
-   public function getSubTitleFr(): string
+    public function getSubTitleFr(): string
     {
         return $this->getSubTitle('fr');
+    }
+
+    public function getSubTitle(string $locale = null): string
+    {
+        return $this->subTitles[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setSubTitleFr(string $subTitle): self
@@ -43,7 +35,14 @@ trait SubTitlesTrait
         return $this->setSubTitle($subTitle, 'fr');
     }
 
-   public function getSubTitleEn(): string
+    public function setSubTitle(string $subTitle, string $locale = null): self
+    {
+        $this->subTitles[ApplicationUtility::locale($locale)] = $subTitle;
+
+        return $this;
+    }
+
+    public function getSubTitleEn(): string
     {
         return $this->getSubTitle('en');
     }

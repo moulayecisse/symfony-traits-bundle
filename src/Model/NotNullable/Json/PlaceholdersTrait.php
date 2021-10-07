@@ -3,23 +3,10 @@
 namespace Cisse\Bundle\TraitsBundle\Model\NotNullable\Json;
 
 use Cisse\Bundle\TraitsBundle\Utility\ApplicationUtility;
-use JetBrains\PhpStorm\Pure;
 
 trait PlaceholdersTrait
 {
     protected array $placeholders = [];
-
-   public function getPlaceholder(string $locale = null): string
-    {
-        return $this->placeholders[ApplicationUtility::locale($locale)] ?? '';
-    }
-
-    public function setPlaceholder(string $placeholder, string $locale = null): self
-    {
-        $this->placeholders[ApplicationUtility::locale($locale)] = $placeholder;
-
-        return $this;
-    }
 
     public function getPlaceholders(): array
     {
@@ -33,9 +20,14 @@ trait PlaceholdersTrait
         return $this;
     }
 
-   public function getPlaceholderFr(): string
+    public function getPlaceholderFr(): string
     {
         return $this->getPlaceholder('fr');
+    }
+
+    public function getPlaceholder(string $locale = null): string
+    {
+        return $this->placeholders[ApplicationUtility::locale($locale)] ?? '';
     }
 
     public function setPlaceholderFr(string $placeholder): self
@@ -43,7 +35,14 @@ trait PlaceholdersTrait
         return $this->setPlaceholder($placeholder, 'fr');
     }
 
-   public function getPlaceholderEn(): string
+    public function setPlaceholder(string $placeholder, string $locale = null): self
+    {
+        $this->placeholders[ApplicationUtility::locale($locale)] = $placeholder;
+
+        return $this;
+    }
+
+    public function getPlaceholderEn(): string
     {
         return $this->getPlaceholder('en');
     }
