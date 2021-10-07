@@ -4,7 +4,7 @@ namespace Cisse\Bundle\TraitsBundle\Model\Nullable\Json;
 
 trait ValueTrait
 {
-    protected mixed $value = null;
+    protected mixed $value;
 
     public function getValue(): mixed
     {

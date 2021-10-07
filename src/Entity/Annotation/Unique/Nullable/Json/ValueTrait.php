@@ -11,5 +11,5 @@ trait ValueTrait
     /**
      * @ORM\Column(type="json", unique=true, nullable=true)
      */
-    protected mixed $value = null;
+    protected mixed $value;
 }
